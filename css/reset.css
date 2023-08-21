@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #EBD9D8;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
