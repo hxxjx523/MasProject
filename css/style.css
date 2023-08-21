@@ -1,1 +1,40 @@
+.name{
+    width: 600px;
+    height: 120px;
+    text-align: center;
+    margin: 18% auto;
+    font-size: 100px;
+    font-style: italic;
+    border-bottom: 3px black solid;
+    position: sticky;
+    top: 0px; /* 도달했을때 고정시킬 위치 */
+    z-index: 10;
+}
+
+.img1{
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.pie-chart {
+    position: relative;
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  span.center{
+    background: #fff;
+    display : block;
+    position: absolute;
+    top:50%; left:50%;
+    width:100px; height:100px;
+    border-radius: 50%;
+    text-align:center; 
+    line-height: 100px;
+    font-size:30px;
+     transform: translate(-50%, -50%);
+  }
 
