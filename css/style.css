@@ -1,8 +1,9 @@
+
 .name{
     width: 600px;
     height: 120px;
     text-align: center;
-    margin: 18% auto;
+    margin: 19% auto;
     font-size: 100px;
     font-style: italic;
     border-bottom: 3px black solid;
@@ -11,30 +12,223 @@
     z-index: 10;
 }
 
-.img1{
-    width: 300px;
-    margin-left: 100px;
-    margin-top: 100px;
+hr{
+    margin: 10px 31px 0 31px;
+    background-color: black;
+    border: solid 1px;
+    
 }
 
+.div{
+    margin-top: 50px;
+}
+
+.div > .title{
+    text-align: left;
+}
+
+.title{
+    font-size: 20px;
+    margin-left: 60px;
+}
+.img1{
+    width: 300px;
+    /* margin-left: 200px;
+    margin-top: 100px; */
+    /* margin: 0 auto; */
+}
+
+.info1{
+    display: flex;
+    /* gap: 100px; */
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 800px;
+    align-items: center;
+    font-size: 13px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info-txt > div{
+   margin: 5px 0;
+}
+
+.txt1{
+    background-color: white;
+    padding: 7px;
+    margin-top: -5px;
+    text-align: center;
+}
+
+.chart1{
+    width: 80%;
+    margin: 50px auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* 도넛차트 */
 .pie-chart {
     position: relative;
     display:inline-block;
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     transition: 0.3s;
+    margin: 20px 64.5px;
   }
   span.center{
     background: #fff;
     display : block;
     position: absolute;
-    top:50%; left:50%;
-    width:100px; height:100px;
+    top:50%; 
+    left:50%;
+    width:90px; 
+    height:90px;
     border-radius: 50%;
     text-align:center; 
-    line-height: 100px;
-    font-size:30px;
+    line-height: 90px;
+    font-size: 12px;
      transform: translate(-50%, -50%);
   }
+  .pie-chart1{
+    animation: pie1 0.5s forwards;
+  }
+  @keyframes pie1{
+    0%{background : conic-gradient(#575B75 0% 0%, #ffffff 0% 100%)}
+    6%{background : conic-gradient(#575B75 0% 5%, #ffffff 0% 100%)}
+    12%{background : conic-gradient(#575B75 0% 10%, #ffffff 0% 100%)}
+    18%{background : conic-gradient(#575B75 0% 15%, #ffffff 0% 100%)}
+    25%{background : conic-gradient(#575B75 0% 20%, #ffffff 0% 100%)}
+    33%{background : conic-gradient(#575B75 0% 25%, #ffffff 0% 100%)}
+    38%{background : conic-gradient(#575B75 0% 30%, #ffffff 0% 100%)}
+    44%{background : conic-gradient(#575B75 0% 35%, #ffffff 0% 100%)}
+    50%{background : conic-gradient(#575B75 0% 40%, #ffffff 0% 100%)}
+    56%{background : conic-gradient(#575B75 0% 45%, #ffffff 0% 100%)}
+    62%{background : conic-gradient(#575B75 0% 50%, #ffffff 0% 100%)}
+    68%{background : conic-gradient(#575B75 0% 55%, #ffffff 0% 100%)}
+    75%{background : conic-gradient(#575B75 0% 60%, #ffffff 0% 100%)}
+    82%{background : conic-gradient(#575B75 0% 65%, #ffffff 0% 100%)}
+    88%{background : conic-gradient(#575B75 0% 70%, #ffffff 0% 100%)}
+    94%{background : conic-gradient(#575B75 0% 75%, #ffffff 0% 100%)}
+    98%{background : conic-gradient(#575B75 0% 80%, #ffffff 0% 100%)}
+    100%{background : conic-gradient(#575B75 0% 85%, #ffffff 80% 100%)}
+  }
+  
+  .pie-chart2{
+    animation: pie2 0.5s forwards;
+  }
+  @keyframes pie2{
+    0%{background : conic-gradient(#575B75 0% 0%, #ffffff 0% 100%)}
+    6%{background : conic-gradient(#575B75 0% 5%, #ffffff 0% 100%)}
+    12%{background : conic-gradient(#575B75 0% 10%, #ffffff 0% 100%)}
+    18%{background : conic-gradient(#575B75 0% 15%, #ffffff 0% 100%)}
+    25%{background : conic-gradient(#575B75 0% 20%, #ffffff 0% 100%)}
+    33%{background : conic-gradient(#575B75 0% 25%, #ffffff 0% 100%)}
+    38%{background : conic-gradient(#575B75 0% 30%, #ffffff 0% 100%)}
+    44%{background : conic-gradient(#575B75 0% 35%, #ffffff 0% 100%)}
+    50%{background : conic-gradient(#575B75 0% 40%, #ffffff 0% 100%)}
+    56%{background : conic-gradient(#575B75 0% 45%, #ffffff 0% 100%)}
+    62%{background : conic-gradient(#575B75 0% 50%, #ffffff 0% 100%)}
+    68%{background : conic-gradient(#575B75 0% 55%, #ffffff 0% 100%)}
+    75%{background : conic-gradient(#575B75 0% 60%, #ffffff 0% 100%)}
+    82%{background : conic-gradient(#575B75 0% 65%, #ffffff 0% 100%)}
+    94%{background : conic-gradient(#575B75 0% 70%, #ffffff 0% 100%)}
+    100%{background : conic-gradient(#575B75 0% 75%, #ffffff 0% 100%)}
+  }
+
+  .pie-chart3{
+    animation: pie3 0.5s forwards;
+  }
+  @keyframes pie3{
+    0%{background : conic-gradient(#575B75 0% 0%, #ffffff 0% 100%)}
+    6%{background : conic-gradient(#575B75 0% 5%, #ffffff 0% 100%)}
+    12%{background : conic-gradient(#575B75 0% 10%, #ffffff 0% 100%)}
+    18%{background : conic-gradient(#575B75 0% 15%, #ffffff 0% 100%)}
+    25%{background : conic-gradient(#575B75 0% 20%, #ffffff 0% 100%)}
+    33%{background : conic-gradient(#575B75 0% 25%, #ffffff 0% 100%)}
+    38%{background : conic-gradient(#575B75 0% 30%, #ffffff 0% 100%)}
+    44%{background : conic-gradient(#575B75 0% 35%, #ffffff 0% 100%)}
+    50%{background : conic-gradient(#575B75 0% 40%, #ffffff 0% 100%)}
+    56%{background : conic-gradient(#575B75 0% 45%, #ffffff 0% 100%)}
+    62%{background : conic-gradient(#575B75 0% 50%, #ffffff 0% 100%)}
+    68%{background : conic-gradient(#575B75 0% 55%, #ffffff 0% 100%)}
+    75%{background : conic-gradient(#575B75 0% 60%, #ffffff 0% 100%)}
+    82%{background : conic-gradient(#575B75 0% 65%, #ffffff 0% 100%)}
+    100%{background : conic-gradient(#575B75 0% 70%, #ffffff 0% 100%)}
+  }
+
+  .pie-chart4{
+    animation: pie4 0.5s forwards;
+  }
+  @keyframes pie4{
+    0%{background : conic-gradient(#575B75 0% 0%, #ffffff 0% 100%)}
+    6%{background : conic-gradient(#575B75 0% 5%, #ffffff 0% 100%)}
+    12%{background : conic-gradient(#575B75 0% 10%, #ffffff 0% 100%)}
+    18%{background : conic-gradient(#575B75 0% 15%, #ffffff 0% 100%)}
+    25%{background : conic-gradient(#575B75 0% 20%, #ffffff 0% 100%)}
+    33%{background : conic-gradient(#575B75 0% 25%, #ffffff 0% 100%)}
+    38%{background : conic-gradient(#575B75 0% 30%, #ffffff 0% 100%)}
+    44%{background : conic-gradient(#575B75 0% 35%, #ffffff 0% 100%)}
+    50%{background : conic-gradient(#575B75 0% 40%, #ffffff 0% 100%)}
+    63%{background : conic-gradient(#575B75 0% 45%, #ffffff 0% 100%)}
+    78%{background : conic-gradient(#575B75 0% 50%, #ffffff 0% 100%)}
+    90%{background : conic-gradient(#575B75 0% 55%, #ffffff 0% 100%)}
+    100%{background : conic-gradient(#575B75 0% 60%, #ffffff 0% 100%)}
+  }
+
+  .pie-chart5{
+    animation: pie5 0.5s forwards;
+  }
+  @keyframes pie5{
+    0%{background : conic-gradient(#575B75 0% 0%, #ffffff 0% 100%)}
+    6%{background : conic-gradient(#575B75 0% 5%, #ffffff 0% 100%)}
+    12%{background : conic-gradient(#575B75 0% 10%, #ffffff 0% 100%)}
+    18%{background : conic-gradient(#575B75 0% 15%, #ffffff 0% 100%)}
+    25%{background : conic-gradient(#575B75 0% 20%, #ffffff 0% 100%)}
+    33%{background : conic-gradient(#575B75 0% 25%, #ffffff 0% 100%)}
+    50%{background : conic-gradient(#575B75 0% 30%, #ffffff 0% 100%)}
+    60%{background : conic-gradient(#575B75 0% 35%, #ffffff 0% 100%)}
+    70%{background : conic-gradient(#575B75 0% 40%, #ffffff 0% 100%)}
+    88%{background : conic-gradient(#575B75 0% 45%, #ffffff 0% 100%)}
+    100%{background : conic-gradient(#575B75 0% 50%, #ffffff 0% 100%)}
+  }
+
+  .pie-chart6{
+    animation: pie6 0.5s forwards;
+  }
+  @keyframes pie6{
+    0%{background : conic-gradient(#575B75 0% 0%, #ffffff 0% 100%)}
+    6%{background : conic-gradient(#575B75 0% 5%, #ffffff 0% 100%)}
+    12%{background : conic-gradient(#575B75 0% 10%, #ffffff 0% 100%)}
+    18%{background : conic-gradient(#575B75 0% 15%, #ffffff 0% 100%)}
+    25%{background : conic-gradient(#575B75 0% 20%, #ffffff 0% 100%)}
+    33%{background : conic-gradient(#575B75 0% 25%, #ffffff 0% 100%)}
+    38%{background : conic-gradient(#575B75 0% 30%, #ffffff 0% 100%)}
+    44%{background : conic-gradient(#575B75 0% 35%, #ffffff 0% 100%)}
+    50%{background : conic-gradient(#575B75 0% 40%, #ffffff 0% 100%)}
+    56%{background : conic-gradient(#575B75 0% 45%, #ffffff 0% 100%)}
+    62%{background : conic-gradient(#575B75 0% 50%, #ffffff 0% 100%)}
+    68%{background : conic-gradient(#575B75 0% 55%, #ffffff 0% 100%)}
+    75%{background : conic-gradient(#575B75 0% 60%, #ffffff 0% 100%)}
+    82%{background : conic-gradient(#575B75 0% 65%, #ffffff 0% 100%)}
+    88%{background : conic-gradient(#575B75 0% 70%, #ffffff 0% 100%)}
+    94%{background : conic-gradient(#575B75 0% 75%, #ffffff 0% 100%)}
+    98%{background : conic-gradient(#575B75 0% 80%, #ffffff 0% 100%)}
+    99%{background : conic-gradient(#575B75 0% 85%, #ffffff 80% 100%)}
+    100%{background : conic-gradient(#575B75 0% 90%, #ffffff 0% 100%)}
+  }
+
+  .pie-chart7{
+    animation: pie3 0.5s forwards;
+  }
+
+.info2{
+  width: 300px;
+  font-size: 12px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 
